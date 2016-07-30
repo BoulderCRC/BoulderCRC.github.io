@@ -2394,7 +2394,7 @@
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: rgb(230,165,70);/*rgb(240,180,90);*/
+		background-color: rgb(255,170,60);/*rgb(240,180,90);*/
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), /*url("images/overlay.png"), url("../../images/banner.jpg");*/
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -2414,7 +2414,7 @@
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(225, 155, 55, 1.0);
+			background: rgba(255, 155, 50, 1.0);
 			color: #000;
 			display: inline-block;
 			opacity: 0;
