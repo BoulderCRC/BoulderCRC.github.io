@@ -1588,6 +1588,11 @@
 			border-bottom-color: transparent;
 		}
 
+    a#bigemail {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
 	strong, b {
 		font-weight: 400;
 	}
