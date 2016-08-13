@@ -1701,7 +1701,8 @@
 
 			header.special .icon:before {
 				font-size: 3.5em;
-				opacity: 0.35;
+				opacity: 1.0;
+                color: rgba(255, 155, 50, 1.0);
 			}
 
 	footer > :last-child {
@@ -1905,6 +1906,7 @@
 			.icon.featured:before {
 				font-size: 5em;
 				line-height: 1em;
+                color: rgb(255,170,60);
 			}
 
 		.icon > .label {
