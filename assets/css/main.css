@@ -1938,6 +1938,15 @@
 			padding-left: 0.5em;
 		}
 
+    ul.text {
+        list-style: disc;
+        padding-left: 3.5em;
+    }
+
+        ul.text li {
+            padding-top: 1em;
+        }
+
 	ul.icons {
 		cursor: default;
 	}
