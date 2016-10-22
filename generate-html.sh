@@ -4,7 +4,7 @@
 function generate_html {
 
 	# create html tag
-	echo '<html>' >>$1.html
+	echo '<!DOCTPE HTML><html>' >>$1.html
 
 	# concat frontmatter frag to web page
 	# this contains head part of document
@@ -40,3 +40,4 @@ function generate_html {
 # create "first_agrument.html" file with second argument header class
 generate_html index alt
 generate_html provost-letter-2016-09 ''
+# generate_html reinformation ''
