@@ -6,6 +6,7 @@
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
 		break-inside: avoid;
+		width: 100%;
 	}
 
 	.tableofcontents .4u {
@@ -22,5 +23,35 @@
 		margin-bottom: 0;
 	}
 	.tableofcontents p {
-		margin: 0;
+		margin-bottom: .5em;
+		line-height: 1.5em;
+	}
+
+
+p.justify {
+	text-align: justify;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+
+thead {
+	background: #ffe1bb;
+}
+	tr {
+	    border-top: 1px solid rgba(124, 128, 129, 0.2);
+	    border-bottom: 1px solid rgba(124, 128, 129, 0.2);
+	}
+		tr:nth-child(even) {
+			background: #f3f6fa;
+		}
+	th {
+		font-weight: bold;
+	}
+	td {
+		text-align: center;
 	}

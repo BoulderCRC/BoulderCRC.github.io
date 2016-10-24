@@ -23,7 +23,7 @@ function generate_html {
     cat $1.fragment.html >>$1.html
 	echo '</div>' >>$1.html
 
-	#concat backmatter frag to web page
+	# concat backmatter frag to web page
 	# this contains contact us, footer, and scripts
     cat backmatter.fragment.html >>$1.html
 
@@ -37,7 +37,8 @@ function generate_html {
     sed -i 's/\r//' $1.html
 }
 
-# create "first_agrument.html" file with second argument header class
+# create "firstagrument.html" file with second argument as header class
 generate_html index alt
 generate_html provost-letter-2016-09 ''
-# generate_html reinformation ''
+generate_html reinformation ''
+generate_html reinformation_rent ''
