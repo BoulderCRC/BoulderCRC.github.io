@@ -7,6 +7,8 @@ function generate-redirect-page {
 }
 
 generate-redirect-page madden4cu http://vote.madden4cu.com/
+cp madden4cu.html ../madden.html
+cp madden4cu.html ../vote.html
 
 generate-redirect-page pledge-2016-10 http://www.colorado.edu/today/2016/10/12/academic-excellence-and-student-climate-shape-fall-2016-graduate-school-initiatives
 generate-redirect-page survey-results-2014 http://web.archive.org/web/20160911224955/http://www.colorado.edu/studentsuccess/campus-climate/graduate-student-social-climate-survey
