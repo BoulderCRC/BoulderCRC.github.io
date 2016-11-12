@@ -27,6 +27,35 @@
 		line-height: 1.5em;
 	}
 
+.manualNav {
+	margin-bottom: 20px;
+	text-align: center;
+}
+	.wrapper + .manualNav {
+		margin-top: -4em;
+	}
+	.manualNav .button.small {
+		padding: 1em 2em;
+		font-size: 0.6em;
+		line-height: 1em;
+		min-width: 0;
+		max-width: none;
+	}
+	@media screen and (max-width: 736px) {
+		.manualNav {
+			margin-bottom: 0px;
+		}
+		.wrapper + .manualNav {
+			margin-top: -1.5em;
+		}
+		.manualNav .button.small {
+			width: 100%;
+			float: none;
+			margin-bottom: 1em;
+		}
+	}
+
+
 
 p.justify {
 	text-align: justify;
@@ -55,3 +84,11 @@ thead {
 	td {
 		text-align: center;
 	}
+
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
