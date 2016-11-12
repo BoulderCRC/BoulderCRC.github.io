@@ -11,15 +11,21 @@ function generate_html {
     COMMONTEMPLATES=$(pwd)
 
     (
+        BASEDIR=.
         # If first argument is nonempty, change to the directory given by first arg.
-        [[ -n "$OUTDIR" ]] && cd $OUTDIR
+        # BASEDIR is the path of the base of our website, relative to output directory.
+        [[ -n "$OUTDIR" ]] \
+            && cd $OUTDIR \
+            && BASEDIR=$(echo ${OUTDIR} | sed -re 's/[^\/]+/\.\./g')
 
         # Create output file starting with doctype and html tag.
         echo '<!DOCTYPE HTML><html>' >$PAGENAME.html
 
         # Append frontmatter fragment to file.
         # This contains head part of document.
-        cat ${COMMONTEMPLATES}/frontmatter.fragment.html >>$PAGENAME.html
+        cat ${COMMONTEMPLATES}/frontmatter.fragment.html \
+            |sed s/%basedir%/${BASEDIR}/g \
+            >>$PAGENAME.html
 
         # Create body tag.
         echo '<body class="'$PAGENAME'">' >>$PAGENAME.html
@@ -29,7 +35,9 @@ function generate_html {
 
         # Append header.
         # This is the main header for the page, using the argument-provided header class.
-        cat ${COMMONTEMPLATES}/header.fragment.html |sed s/%headerclass%/$HEADERCLASS/g >>$PAGENAME.html
+        cat ${COMMONTEMPLATES}/header.fragment.html \
+            |sed s/%headerclass%/$HEADERCLASS/g \
+            >>$PAGENAME.html
 
         # Append main page content.
         cat $PAGENAME.fragment.html >>$PAGENAME.html
