@@ -1,44 +1,57 @@
 #!/bin/env sh
 
-# First argument is page name; second argument is the header class.
+# See variables defined below for arguments.
+# ASSUMES:
+#   - present working directory is at the root of the file tree,
+#     and that all common templates are in the root directory.
 function generate_html {
+    OUTDIR=$1       # Directory of page we're generating.
+    PAGENAME=$2     # Name of page we're generating.
+    HEADERCLASS=$3  # Class of page header.
+    COMMONTEMPLATES=$(pwd)
 
-	# create html tag
-	echo '<!DOCTPE HTML><html>' >>$1.html
+    (
+        # If first argument is nonempty, change to the directory given by first arg.
+        [[ -n "$OUTDIR" ]] && cd $OUTDIR
 
-	# concat frontmatter frag to web page
-	# this contains head part of document
-    cat frontmatter.fragment.html >$1.html
+        # Create output file starting with doctype and html tag.
+        echo '<!DOCTYPE HTML><html>' >$PAGENAME.html
 
-	# create body tag
-	echo '<body class="'$1'">' >>$1.html
+        # Append frontmatter fragment to file.
+        # This contains head part of document.
+        cat ${COMMONTEMPLATES}/frontmatter.fragment.html >>$PAGENAME.html
 
-	# create and concat main page frags
-	echo '<div id="page-wrapper">' >>$1.html
-	# concat header
-	# this is the main header for the page, the class gets replaced with the second argument
-    cat header.fragment.html |sed s/%headerclass%/$2/g >>$1.html
-	# concat main page
-	# this contains the primary content for the page
-    cat $1.fragment.html >>$1.html
-	echo '</div>' >>$1.html
+        # Create body tag.
+        echo '<body class="'$PAGENAME'">' >>$PAGENAME.html
 
-	# concat backmatter frag to web page
-	# this contains contact us, footer, and scripts
-    cat backmatter.fragment.html >>$1.html
+        # Create and append main page fragments.
+        echo '<div id="page-wrapper">' >>$PAGENAME.html
 
-	# end body tag
-	echo '</body>' >>$1.html
+        # Append header.
+        # This is the main header for the page, using the argument-provided header class.
+        cat ${COMMONTEMPLATES}/header.fragment.html |sed s/%headerclass%/$HEADERCLASS/g >>$PAGENAME.html
 
-	# end html tag
-	echo '</html>' >>$1.html
+        # Append main page content.
+        cat $PAGENAME.fragment.html >>$PAGENAME.html
+        echo '</div>' >>$PAGENAME.html
 
-	# removes windows returns
-    sed -i 's/\r//' $1.html
+        # Append backmatter fragment to web page.
+        # This contains contact us, footer, and scripts.
+        cat ${COMMONTEMPLATES}/backmatter.fragment.html >>$PAGENAME.html
+
+        # End body tag.
+        echo '</body>' >>$PAGENAME.html
+
+        # End html tag.
+        echo '</html>' >>$PAGENAME.html
+
+        # Removes windows returns... a little tacky... sue me.
+        sed -i 's/\r//' $PAGENAME.html
+    )
 }
 
 # create "firstagrument.html" file with second argument as header class
-generate_html index alt
-generate_html provost-letter-2016-09 ''
-generate_html reinformation ''
-generate_html reinformation_rent ''
+generate_html '' index alt
+generate_html '' provost-letter-2016-09 ''
+generate_html 'manual' index ''
+generate_html 'manual' rent ''
