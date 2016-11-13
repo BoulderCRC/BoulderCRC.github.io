@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/usr/bin/env bash
 
 # See variables defined below for arguments.
 # ASSUMES:
@@ -66,3 +66,4 @@ generate_html 'manual' 'rent' ''
 generate_html 'manual' 'wtf-is-a-regent' ''
 generate_html 'manual' 'labor' ''
 generate_html 'manual' 'links' ''
+generate_html 'manual' 'union' ''
