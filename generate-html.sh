@@ -45,7 +45,9 @@ function generate_html {
 
         # Append backmatter fragment to web page.
         # This contains contact us, footer, and scripts.
-        cat ${COMMONTEMPLATES}/backmatter.fragment.html >>$PAGENAME.html
+        cat ${COMMONTEMPLATES}/backmatter.fragment.html \
+            |sed s/%basedir%/$BASEDIR/g \
+            >>$PAGENAME.html
 
         # End body tag.
         echo '</body>' >>$PAGENAME.html
@@ -66,5 +68,5 @@ generate_html 'manual' 'issues' ''
 generate_html 'manual' 'wtf-is-a-regent' ''
 generate_html 'manual' 'labor' ''
 generate_html 'manual' 'links' ''
-generate_html 'manual' 'living' ''
+#generate_html 'manual' 'living' ''
 generate_html 'manual' 'union' ''
