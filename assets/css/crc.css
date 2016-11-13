@@ -1,3 +1,15 @@
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+p.justify {
+	text-align: justify;
+}
+
+
 .tableofcontents .row {
     column-count: 3;
 	column-width: auto;
@@ -26,6 +38,22 @@
 		margin-bottom: .5em;
 		line-height: 1.5em;
 	}
+
+
+.quote {
+	font-style: italic;
+	text-align: justify;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+	@media screen and (max-width: 736px) {
+		.quote {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+
 
 .manualNav {
 	margin-bottom: 20px;
@@ -57,8 +85,8 @@
 
 
 
-p.justify {
-	text-align: justify;
+figure {
+	text-align: center;
 }
 
 figcaption {
@@ -85,10 +113,7 @@ thead {
 		text-align: center;
 	}
 
-
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
+	table.columnHeader tbody td:first-child {
+		text-align: left;
+		padding-left: 1em;
+	}
