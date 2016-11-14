@@ -6,6 +6,8 @@ function generate-redirect-page {
     sed "s|%dest%|$2|g" redirect.template.html >$1.html
 }
 
+generate-redirect-page dean-response-2016-11 https://docs.google.com/document/d/1iXU1MYzex05O33wPltEC2SH8ChZjUhy4l5OUhAwVpAM/edit
+
 generate-redirect-page madden4cu http://vote.madden4cu.com/
 cp madden4cu.html ../madden.html
 cp madden4cu.html ../vote.html
