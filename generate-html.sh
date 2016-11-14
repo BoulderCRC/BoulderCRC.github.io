@@ -68,7 +68,7 @@ generate_html 'manual' 'issues' ''
 generate_html 'manual' 'what-is-a-regent' ''
 generate_html 'manual' 'labor' ''
 generate_html 'manual' 'links' ''
-#generate_html 'manual' 'living' ''
+generate_html 'manual' 'living' ''
 generate_html 'manual' 'union' ''
 
 ( cd link; ./generate-links.sh; )
