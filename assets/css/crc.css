@@ -1,0 +1,119 @@
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+p.justify {
+	text-align: justify;
+}
+
+
+.tableofcontents .row {
+    column-count: 3;
+	column-width: auto;
+}
+	.tableofcontents .row div {
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+		width: 100%;
+	}
+
+	.tableofcontents .4u {
+		float: none;
+		display: inline-block;
+		margin: 0;
+
+	}
+	.tableofcontents section {
+		border: solid 1px rgba(124, 128, 129, 0.2);
+		padding: 1em;
+	}
+	.tableofcontents h2 {
+		margin-bottom: 0;
+	}
+	.tableofcontents p {
+		margin-bottom: .5em;
+		line-height: 1.5em;
+	}
+
+
+.quote {
+	font-style: italic;
+	text-align: justify;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+	@media screen and (max-width: 736px) {
+		.quote {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+
+
+.manualNav {
+	margin-bottom: 20px;
+	text-align: center;
+}
+	.wrapper + .manualNav {
+		margin-top: -4em;
+	}
+	.manualNav .button.small {
+		padding: 1em 2em;
+		font-size: 0.6em;
+		line-height: 1em;
+		min-width: 0;
+		max-width: none;
+	}
+	@media screen and (max-width: 736px) {
+		.manualNav {
+			margin-bottom: 0px;
+		}
+		.wrapper + .manualNav {
+			margin-top: -1.5em;
+		}
+		.manualNav .button.small {
+			width: 100%;
+			float: none;
+			margin-bottom: 1em;
+		}
+	}
+
+
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+
+thead {
+	background: #ffe1bb;
+}
+	tr {
+	    border-top: 1px solid rgba(124, 128, 129, 0.2);
+	    border-bottom: 1px solid rgba(124, 128, 129, 0.2);
+	}
+		tr:nth-child(even) {
+			background: #f3f6fa;
+		}
+	th {
+		font-weight: bold;
+	}
+	td {
+		text-align: center;
+	}
+
+	table.columnHeader tbody td:first-child {
+		text-align: left;
+		padding-left: 1em;
+	}
