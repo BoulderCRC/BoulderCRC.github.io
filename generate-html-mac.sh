@@ -71,4 +71,4 @@ generate_html 'manual' 'links' ''
 generate_html 'manual' 'living' ''
 generate_html 'manual' 'union' ''
 
-( cd link; sh generate-links.sh; )
+#( cd link; sh generate-links.sh; )
