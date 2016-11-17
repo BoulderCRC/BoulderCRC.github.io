@@ -1,3 +1,6 @@
+/* ************************ */
+/*			GENERAL			*/
+/* ************************ */
 .left {
 	float: left;
 }
@@ -8,8 +11,120 @@
 p.justify {
 	text-align: justify;
 }
+p:last-child {
+	margin-bottom: 0;
+}
+
+article ul {
+	margin-left: 1.5em;
+}
+	article li {
+		list-style-type: circle;
+		margin-bottom: 1em;
+		padding-left: 0.5em;
+	}
+	article ul.special {
+		text-align: center;
+	    font-weight: 500;
+	    margin: 0 0 2em 0;
+	}
+		article .special li {
+			list-style-type: none;
+			padding: 0;
+		}
+
+blockquote cite {
+	font-style: italic;
+    font-size: 0.9em;
+    line-height: 0em;
+}
+	blockquote cite::before {
+		content: "- ";
+	}
 
 
+cite {
+	margin-bottom: 0.5em;
+    display: block;
+    text-indent: -2em;
+    margin-left: 2em;
+}
+
+
+.quote {
+	font-style: italic;
+	text-align: justify;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+	@media screen and (max-width: 736px) {
+		.quote {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+
+
+header.special {
+	margin-bottom: 3em;
+	padding-top: 6em;
+}
+
+
+
+/* ************************************ */
+/*			      FIGURES				*/
+/*			TABLES, IMAGES, ETC			*/
+/* ************************************ */
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+
+thead {
+	background: #ffe1bb;
+}
+	thead th, thead td {
+		padding: 2px 0;
+	}
+	tr {
+	    border-top: 1px solid rgba(124, 128, 129, 0.2);
+	    border-bottom: 1px solid rgba(124, 128, 129, 0.2);
+	}
+		tr:nth-child(even) {
+			background: #f3f6fa;
+		}
+	th {
+		font-weight: bold;
+	}
+	td {
+		text-align: center;
+	}
+
+	table.columnHeader th:first-child, table.columnHeader td:first-child {
+		text-align: left;
+		padding-left: 1em;
+	}
+	table tr.important {
+		background: #e3e6ea;
+	}
+		table tr.important td {
+			padding: 2px 0;
+		}
+
+
+
+/* ************************ */
+/*			MANUAL			*/
+/* ************************ */
 .tableofcontents .row {
     column-count: 3;
 	column-width: auto;
@@ -40,21 +155,6 @@ p.justify {
 	}
 
 
-.quote {
-	font-style: italic;
-	text-align: justify;
-	margin-left: 5em;
-	margin-right: 5em;
-}
-	@media screen and (max-width: 736px) {
-		.quote {
-			margin-left: 0;
-			margin-right: 0;
-		}
-	}
-
-
-
 .manualNav {
 	margin-bottom: 20px;
 	text-align: center;
@@ -77,43 +177,13 @@ p.justify {
 			margin-top: -1.5em;
 		}
 		.manualNav .button.small {
-			width: 100%;
+			width: 95%;
 			float: none;
 			margin-bottom: 1em;
 		}
 	}
 
 
-
-figure {
-	text-align: center;
+.header {
+	margin-top: 2em;
 }
-
-figcaption {
-    text-align: center;
-    font-style: italic;
-	margin-bottom: 0.5em;
-}
-
-
-thead {
-	background: #ffe1bb;
-}
-	tr {
-	    border-top: 1px solid rgba(124, 128, 129, 0.2);
-	    border-bottom: 1px solid rgba(124, 128, 129, 0.2);
-	}
-		tr:nth-child(even) {
-			background: #f3f6fa;
-		}
-	th {
-		font-weight: bold;
-	}
-	td {
-		text-align: center;
-	}
-
-	table.columnHeader tbody td:first-child {
-		text-align: left;
-		padding-left: 1em;
-	}
