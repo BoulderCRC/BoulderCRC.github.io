@@ -16,6 +16,7 @@ generate-redirect-page pledge-2016-10 http://www.colorado.edu/today/2016/10/12/a
 generate-redirect-page survey-results-2014 http://web.archive.org/web/20160911224955/http://www.colorado.edu/studentsuccess/campus-climate/graduate-student-social-climate-survey
 generate-redirect-page living-wage-uggs-resolution-2016 http://www.colorado.edu/uggs/sites/default/files/attached-files/uggs_resolution_on_rights_and_compensation_0.pdf
 generate-redirect-page regent-meeting-2016 http://www.dailycamera.com/cu-news/ci_30024771/cu-boulder-graduate-students-demand-higher-wages-offset
+cp survey-results-2014.html ../survey.html
 
 generate-redirect-page subscribe http://eepurl.com/clWamD
 mv subscribe.html ..
