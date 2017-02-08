@@ -36,7 +36,6 @@ article ul {
 blockquote cite {
 	font-style: italic;
     font-size: 0.9em;
-    line-height: 0em;
 }
 	blockquote cite::before {
 		content: "- ";
@@ -49,7 +48,6 @@ cite {
     text-indent: -2em;
     margin-left: 2em;
 }
-
 
 .quote {
 	font-style: italic;
