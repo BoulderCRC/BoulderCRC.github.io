@@ -63,12 +63,26 @@ cite {
 	}
 
 
-
 header.special {
 	margin-bottom: 3em;
 	padding-top: 6em;
 }
 
+
+
+.mobile {
+	display: none;
+}
+	@media screen and (max-width: 736px) {
+		.mobile {
+			display: block;
+		}
+	}
+
+.warning {
+	background: #ffe1bb;
+    padding: 10px;
+}
 
 
 /* ************************************ */
