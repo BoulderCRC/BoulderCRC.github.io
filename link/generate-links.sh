@@ -22,3 +22,6 @@ generate-redirect-page subscribe http://eepurl.com/clWamD
 mv subscribe.html ..
 generate-redirect-page join-thanks "https://docs.google.com/forms/d/e/1FAIpQLSdy9nP6yav8Xk1gMP9MYvsbdLaqPPxUHmiB9jV0eybWaa4LcA/viewform?usp=sf_link"
 mv join-thanks.html ..
+
+generate-redirect-page 2014-survey docs/2014graddemoanalysis.pdf
+mv 2014-survey.html ..
