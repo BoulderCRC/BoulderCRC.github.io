@@ -25,3 +25,5 @@ mv join-thanks.html ..
 
 generate-redirect-page 2014-survey docs/2014graddemoanalysis.pdf
 mv 2014-survey.html ..
+generate-redirect-page 2014-survey-complete docs/2014-sc-survey-oiec-analysis.zip
+mv 2014-survey-complete.html ..
