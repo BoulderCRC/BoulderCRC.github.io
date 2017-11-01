@@ -27,3 +27,6 @@ generate-redirect-page 2014-survey docs/2014graddemoanalysis.pdf
 mv 2014-survey.html ..
 generate-redirect-page 2014-survey-complete docs/2014-sc-survey-oiec-analysis.zip
 mv 2014-survey-complete.html ..
+
+generate-redirect-page wages-petition-sign https://docs.google.com/forms/d/e/1FAIpQLSeMaf6Qpw_zLVddneM2EyZyDCheRS0Nrs8iP0c7Ts9geQcw9w/viewform
+mv wages-petition-sign.html ..
