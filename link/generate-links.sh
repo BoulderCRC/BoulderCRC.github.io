@@ -30,3 +30,6 @@ mv 2014-survey-complete.html ..
 
 generate-redirect-page wages-petition-sign https://docs.google.com/forms/d/e/1FAIpQLSeMaf6Qpw_zLVddneM2EyZyDCheRS0Nrs8iP0c7Ts9geQcw9w/viewform
 mv wages-petition-sign.html ..
+
+generate-redirect-page TCJA docs/TCJA.pdf
+mv TCJA.html ..
