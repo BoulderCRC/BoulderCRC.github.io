@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # First argument is the name of the link.
 # Second argument is the destination URL.
