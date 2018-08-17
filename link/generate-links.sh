@@ -32,7 +32,13 @@ generate-redirect-page wages-petition-sign https://docs.google.com/forms/d/e/1FA
 mv wages-petition-sign.html ..
 
 generate-redirect-page TCJA docs/TCJA.pdf
+sed -i 's/Click here to continue/Click here if download does not start automatically/' TCJA.html
 mv TCJA.html ..
 
 generate-redirect-page survival-manual docs/graduate-survival-manual.pdf
+sed -i 's/Click here to continue/Click here if download does not start automatically/' survival-manual.html
 mv survival-manual.html ..
+
+generate-redirect-page am-i-a-worker docs/am-i-a-worker.pdf
+sed -i 's/Click here to continue/Click here if download does not start automatically/' am-i-a-worker.html
+mv am-i-a-worker.html ..
