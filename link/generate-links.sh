@@ -33,3 +33,6 @@ mv wages-petition-sign.html ..
 
 generate-redirect-page TCJA docs/TCJA.pdf
 mv TCJA.html ..
+
+generate-redirect-page survival-manual docs/graduate-survival-manual.pdf
+mv survival-manual.html ..
