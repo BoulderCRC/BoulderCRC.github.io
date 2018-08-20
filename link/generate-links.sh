@@ -42,3 +42,6 @@ mv survival-manual.html ..
 generate-redirect-page am-i-a-worker docs/am-i-a-worker.pdf
 sed -i 's/Click here to continue/Click here if download does not start automatically/' am-i-a-worker.html
 mv am-i-a-worker.html ..
+
+generate-redirect-page new-supporter 'https://docs.google.com/forms/d/e/1FAIpQLSeZO2-OyJ8P7WNRpPYYmY_qsJkmJQgOo4izGXif_kMtmAfBaw/viewform?usp=sf_link'
+mv new-supporter.html ..
