@@ -199,3 +199,7 @@ thead {
 .header {
 	margin-top: 2em;
 }
+
+.image::before {
+	background: none;
+}
