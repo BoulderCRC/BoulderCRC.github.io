@@ -31,6 +31,9 @@ mv 2014-survey-complete.html ..
 generate-redirect-page wages-petition-sign https://docs.google.com/forms/d/e/1FAIpQLSeMaf6Qpw_zLVddneM2EyZyDCheRS0Nrs8iP0c7Ts9geQcw9w/viewform
 mv wages-petition-sign.html ..
 
+generate-redirect-page fee-waiver-sign https://docs.google.com/forms/d/e/1FAIpQLSexmso9BvlT-o0tIGjJcyeSH67oAvkl2rmPt7k1WD_rAubDTA/viewform?usp=sf_link
+mv fee-waiver-sign.html ..
+
 generate-redirect-page TCJA docs/TCJA.pdf
 sed -i 's/Click here to continue/Click here if download does not start automatically/' TCJA.html
 mv TCJA.html ..
