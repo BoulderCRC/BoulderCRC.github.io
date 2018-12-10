@@ -34,6 +34,9 @@ mv wages-petition-sign.html ..
 generate-redirect-page fee-waiver-sign https://docs.google.com/forms/d/e/1FAIpQLSexmso9BvlT-o0tIGjJcyeSH67oAvkl2rmPt7k1WD_rAubDTA/viewform?usp=sf_link
 mv fee-waiver-sign.html ..
 
+generate-redirect-page BFA-SSS docs/BFA-SSS-resolution.pdf
+sed -i 's/Click here to continue/Click here if download does not start automatically/' BFA-SSS.html
+
 generate-redirect-page TCJA docs/TCJA.pdf
 sed -i 's/Click here to continue/Click here if download does not start automatically/' TCJA.html
 mv TCJA.html ..
