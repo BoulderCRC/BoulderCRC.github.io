@@ -51,3 +51,6 @@ mv am-i-a-worker.html ..
 
 generate-redirect-page new-supporter 'https://docs.google.com/forms/d/e/1FAIpQLSeZO2-OyJ8P7WNRpPYYmY_qsJkmJQgOo4izGXif_kMtmAfBaw/viewform?usp=sf_link'
 mv new-supporter.html ..
+
+generate-redirect-page rally 'https://www.facebook.com/events/592919221181146/'
+mv rally.html ..
