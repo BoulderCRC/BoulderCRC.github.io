@@ -78,5 +78,6 @@ generate_html 'manual' 'labor' ''
 generate_html 'manual' 'links' ''
 generate_html 'manual' 'living' ''
 generate_html 'manual' 'union' ''
+generate_html 'class-struggle' 'index' ''
 
 ( cd link; ./generate-links.sh; )
