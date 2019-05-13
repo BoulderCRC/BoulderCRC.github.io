@@ -63,6 +63,7 @@ function generate_html {
 generate_html '' 'index' 'alt'
 generate_html '' 'join' ''
 generate_html '' 'apply' ''
+generate_html '' 'who' ''
 generate_html '' 'provost-letter-2016-09' ''
 generate_html '' 'wages-petition-2017-10' ''
 generate_html '' 'fee-waiver-petition' ''
