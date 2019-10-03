@@ -3141,9 +3141,9 @@
 			}
 
 				#banner .inner {
-					background: none;
+					/* background: none; */
 					display: block;
-					padding: 0 1.5em;
+					/* padding: 0 1.5em; */
 				}
 
 					#banner .inner header h2 {
