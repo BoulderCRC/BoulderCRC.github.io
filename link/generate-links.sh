@@ -55,8 +55,8 @@ mv new-supporter.html ..
 generate-redirect-page rally 'https://www.facebook.com/events/592919221181146/'
 mv rally.html ..
 
-generate-redirect-page food-assistance 'https://docs.google.com/forms/d/e/1FAIpQLSdkF54APJ-0ay97E-kTdi2LDcfoebEa9fmRbdWUid8bPqgWSQ/viewform?usp=sf_link'
-mv food-assistance.html ..
+generate-redirect-page food-assistance-application 'https://docs.google.com/forms/d/e/1FAIpQLSdkF54APJ-0ay97E-kTdi2LDcfoebEa9fmRbdWUid8bPqgWSQ/viewform?usp=sf_link'
+mv food-assistance-application.html ..
 
 generate-redirect-page class-struggle-1 '/docs/class-struggle-2019-05-01.pdf'
 mv class-struggle-1.html ../class-struggle/1.html
