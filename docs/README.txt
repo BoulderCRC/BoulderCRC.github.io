@@ -45,5 +45,4 @@ Credits:
 		jquery.dropotron (@ajlkn)
 		jquery.scrolly (@ajlkn)
 		jquery.scrollgress (@ajlkn)
-		Skel (skel.io)
-		
+		Skel (skel.io)		
